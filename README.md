@@ -1,4 +1,20 @@
-Checkout the live website here - https://weatherdaily-forecast.netlify.app/
+# Weather Forecast App
+The Weather Forecast App welcomes you! Users may view the current weather and 5-day forecast in both Celsius and Fahrenheit for any city with this React-based application. Users can examine comprehensive weather data, such as temperature, humidity, wind speed, and more, by utilising the OpenWeatherMap API. Because of its responsive design, the programme offers a simple, straightforward user experience across desktop and mobile platforms.
+# Live Website
+Checkout here: https://weatherdaily-forecast.netlify.app/
+# Features
+View current weather details for a selected city.\
+Explore a 5-day forecast with date, average temperature, and weather description.\
+Toggle between Celsius and Fahrenheit units for temperature.
+# Technologies Used
+ReactJS\
+HTML5\
+CSS3\
+OpenWeatherMap API
+# Usage
+Enter the desired city in the search bar\
+View detailed current weather information and a 5-day forecast\
+Toggle between Celsius and Fahrenheit for temperature units
 
 
 # Getting Started with Create React App
