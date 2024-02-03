@@ -1,0 +1,283 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  
+
+  /* background-color: #f5f5f5; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure a minimum height to prevent content cut-off */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .center-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .center-container {
+    max-width: 95%;
+  }
+}
+
+.container {
+  /* background-color: #fff;
+   */
+   /* background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+background-color :transparent;
+     backdrop-filter: blur(50px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* .center-container {
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+} */
+.center-container {
+  position: relative;
+  text-align: center;
+  width: 98%; /* Adjust the width based on your design */
+  max-width: 1600px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box;
+}
+/* Add media query for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* .center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 70%;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  color: #555;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.unit-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.unit-toggle label {
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.unit-toggle input {
+  margin-right: 5px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.search-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.weather-form {
+  display: flex;
+}
+
+.toggle-container {
+  display: flex;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.toggle-label {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.toggle-label:hover {
+  background-color: #d3d3d3;
+}
+.toggle-label.active {
+  background-color: #4caf50;
+  color: white;
+}
+/* CurrentWeather.css */
+.current-weather-container {
+/* background-color: #f0f0f0; */
+background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgb(0 0 0);
+margin-top:10px;
+}
+.forecast-container {
+  /* background-color: #f0f0f0; */
+  background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.weather-details {
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+align-items:center;
+}
+.forecast-details {
+  display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+align-items:center;
+}
+
+.temperature,
+.temperature-range,
+.humidity,
+.wind
+{
+flex: 1 0 130px;
+text-align: center;
+}
+
+.temperature div {
+font-size: 24px;
+font-weight: bold;
+}
+
+.temperature-range div,
+.humidity div,
+.wind div,
+.wind-direction div,
+.description-and-icon div {
+font-size: 14px;
+margin: 5px 0;
+}
+
+.icon img {
+width: 60px; /* Adjust the icon size as needed */
+height: 60px; /* Adjust the icon size as needed */
+margin-top: 10px;
+}
+.description {
+display: inline; /* Place description and icon in one line */
+margin-right: 10px; /* Add spacing between description and icon */
+}
+/* Forecast.css */
+
+
+.forecast-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  background-color: #7b0f0f;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+}
+
+.date,
+.avg-temp,
+.description {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.icon img {
+  width: 40px; /* Adjust the icon size as needed */
+  height: 40px; /* Adjust the icon size as needed */
+  margin-top: 5px;
+}
