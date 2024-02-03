@@ -7,12 +7,8 @@ const CurrentWeather = ({ weatherData, isCelsius }) => {
 
   
   const {
-    temperature,
-    minTemp,
-    maxTemp,
     humidity,
     windSpeed,
-    windDirection,
     description,
     icon,
   } = weatherData;
@@ -28,45 +24,7 @@ const CurrentWeather = ({ weatherData, isCelsius }) => {
   };
 
   return (
-    // <div className="current-weather-container">
-    //   <h2>Current Weather</h2>
-    // <div className="weather-details">
-    // <div className="temperature">
-    //   <p>Temperature: {convertTemperature(weatherData.temperature).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-    // </div>
-    //   <p>Min Temperature: {convertTemperature(weatherData.minTemp).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-    //   <p>Max Temperature: {convertTemperature(weatherData.maxTemp).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-    //   <p>Humidity: {humidity}%</p>
-    //   <p>Wind Speed: {windSpeed} m/s, Direction: {getWindDirection(weatherData.windDirection)}</p>
-    //   <p>Description: {description}</p>
-    //   <img src={`http://openweathermap.org/img/w/${icon}.png`} alt="Weather icon" />
-    // </div>
-    // </div>
-  //   <div className="current-weather-container">
-  //   <h2>Current Weather</h2>
-  //   <div className="weather-details">
-  //     <div className="temperature">
-  //       <p>{convertTemperature(weatherData.temperature).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-  //     </div>
-  //     <div className="temperature-range">
-  //       <p>Min: {convertTemperature(weatherData.minTemp).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-  //       <p>Max: {convertTemperature(weatherData.maxTemp).toFixed(2)} {isCelsius ? '°C' : '°F'}</p>
-  //     </div>
-  //     <div className="humidity">
-  //       <p>Humidity: {humidity}%</p>
-  //     </div>
-  //     <div className="wind">
-  //       <p>Wind Speed: {windSpeed} m/s</p>
-  //       <p>Wind Direction: {getWindDirection(weatherData.windDirection)}</p>
-  //     </div>
-  //     <div className="description">
-  //       <p>{description}</p>
-  //     </div>
-  //     <div className="icon">
-  //       <img src={`http://openweathermap.org/img/w/${icon}.png`} alt="Weather icon"  />
-  //     </div>
-  //   </div>
-  // </div>
+
 
 <div className="current-weather-container">
 <h2>Current Weather</h2>
